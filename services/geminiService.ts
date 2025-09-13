@@ -1,6 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import type { ScreeningCriteria, StockDetailInfo, VirtualInvestment } from '../types';
 
+// FIX: Use process.env.API_KEY as per the coding guidelines. This also resolves the TypeScript error.
 const API_KEY = process.env.API_KEY;
 
 if (!API_KEY) {
